@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
+
+:root {
+  --light-blue: #d4ecdd;
+  --black: #112031;
+  --ocean-blue: #345b63;
+  --forest-green: #152d35;
+  --background-light: rgba(0, 0, 0, 0.6);
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  /* min-width: 100vw; */
+  background-image: url("images/pizza_background.jpg");
+  background-size: cover;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background: var(--black);
+  color: var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 6rem;
+  font-style: italic;
+  font-family: "Fascinate Inline", sans-serif;
+}
+
+/* Btn */
+
+.btn {
+  background: var(--light-blue);
+  color: var(--black);
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 2rem;
+}
+
+.btn:hover {
+  color: white;
+  background: var(--black);
+  transform: translateY(-0.5rem);
+}
+
+.btn:active {
+  transform: translateY(0.5rem);
+}
+
+.btn.active {
+  background: var(--black);
+  color: var(--light-blue);
+  border-bottom: 2px solid var(--light-blue);
+}
+
+/* Main */
+
+#main {
+  margin: 10rem auto;
+  width: 700px;
+  height: auto;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0.5rem 0.5rem 3rem var(--light-blue);
+}
+
+/* Home */
+
+.home {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: var(--light-blue);
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  width: 320px;
+  height: 300px;
+  border: 0.5rem solid var(--light-blue);
+  border-radius: 18rem;
+}
+
+/* menu */
+
+.menu {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding: 2rem 0;
+  font-size: 1rem;
+  color: var(--light-blue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.menu-item {
+  background-color: var(--background-light);
+  width: 400px;
+  padding: 2rem;
+  transition: all 1s ease-in-out;
+}
+
+.menu-item h2 {
+  font-size: 2rem;
+}
+
+.menu-item p {
+  font-size: 1.5rem;
+}
+
+.menu-item:hover {
+  background-color: var(--ocean-blue);
+}
+
+
+/* contact */
+
+.contact {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--light-blue);
+    font-size: 1.5rem;
+}
+
+.contact img {
+    border-radius: 0;
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+}
